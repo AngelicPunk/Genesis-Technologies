@@ -74,6 +74,7 @@ html {
         top: 10rem;
         transform: scale(1.45);
         margin: 0 .5rem;
+        left: .5rem;
         width: 20rem;
         height: 10rem;
         display: flex;
