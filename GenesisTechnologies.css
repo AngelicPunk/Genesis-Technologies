@@ -54,4 +54,10 @@ html {
         z-index: 1;
     }
 
+    .about {
+        position: relative;
+        display: block;
+        top: 60rem;
+        color: #BA91F2;
+    }
 }
