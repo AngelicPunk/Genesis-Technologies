@@ -1,0 +1,26 @@
+html {
+    font-family: 'Orbitron', sans-serif;
+    
+}
+
+.nav {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 1.5rem;
+    display: flex;
+    font-weight: 400;
+    color: rgb(197, 153, 238);
+    z-index: 2;
+    position: absolute;
+    right: 5rem;
+    height: 4rem;
+}
+
+.background {
+    width: 100rem;
+    height: 50rem;
+    display: block;
+    position: fixed;
+    top: -1rem;
+    left: -1rem;
+    z-index: 1;
+}
