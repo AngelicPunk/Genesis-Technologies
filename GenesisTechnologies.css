@@ -76,7 +76,7 @@ html {
         margin: 1rem;
         width: 20rem;
         height: 10rem;
-        left: -.9rem;
+        left: -1rem;
         display: flex;
         position: absolute;
         z-index: 1;
