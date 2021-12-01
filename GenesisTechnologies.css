@@ -1,5 +1,6 @@
 html {
     font-family: 'Orbitron', sans-serif;
+    background-color: #160A40;
     
 }
 
@@ -13,14 +14,25 @@ html {
     position: absolute;
     right: 5rem;
     height: 4rem;
+    background-color: rgba(214,206,242, .53);
+    border-radius: 5rem 5rem;
+    right: 4rem;
+    width: 11rem;
 }
 
 .background {
-    width: 100rem;
+    width: 105rem;
     height: 50rem;
-    display: block;
-    position: fixed;
+    display: flex;
+    position: absolute;
     top: -1rem;
     left: -1rem;
     z-index: 1;
+}
+
+.about {
+    position: relative;
+    display: block;
+    top: 60rem;
+    color: #BA91F2;
 }
