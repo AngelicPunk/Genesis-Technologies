@@ -96,21 +96,21 @@ html {
         display: flex;
         position:  relative;
         text-align: center;
-        margin: 0 2.2rem;
+        
         font-weight: 600;
         padding-bottom: 1.5rem;
     }
     
     #missionStatement {
         font-weight: 400;
-        font-size: 1.2rem;
-        line-height: 2.5rem;
+        font-size: 1.3rem;
+        line-height: 2.2rem;
         display: flex;
         position: relative;
         text-align: center;
         top: 8rem;
-        right: 19rem;
-       margin: 0 -4rem;
-        padding-bottom: 4rem;
+        right: 20rem;
+       margin: 0 2.2rem;
+        padding: 2rem 0;
     }
 }
