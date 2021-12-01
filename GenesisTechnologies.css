@@ -65,18 +65,18 @@ html {
     html {
         font-family: 'Orbitron', sans-serif;
         background-color: #160A40;
-        overflow-x: none;
+        overflow-x: hidden;
     }
     .nav {
         visibility: hidden;
     }
     .background {
         top: 10rem;
-        transform: scale(1.45);
+        transform: scale(1.5);
         margin: 0 .5rem;
-        left: .5rem;
         width: 20rem;
         height: 10rem;
+        left: 1rem;
         display: flex;
         position: absolute;
         z-index: 1;
@@ -87,27 +87,30 @@ html {
         display: flex;
         top: 55rem;
         color: #BA91F2;
-        width: 35rem;
-        
+        width: 40rem;
+        margin: 0 3rem;
     }
 
     #missionStatementTitle {
         font-size: 3rem;
         display: flex;
         position:  relative;
-        margin: 0 2rem;    
         text-align: center;
+        margin: 0 2.2rem;
+        font-weight: 600;
+        padding-bottom: 1.5rem;
     }
     
     #missionStatement {
-        font-weight: 500;
-        font-size: 1.2rem;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
         display: flex;
         position: relative;
         text-align: center;
         top: 8rem;
-        right: 17rem;
-       margin: 2rem -4rem;
+        right: 19rem;
+       margin: 0 -4rem;
         padding-bottom: 4rem;
     }
 }
