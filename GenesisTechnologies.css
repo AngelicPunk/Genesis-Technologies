@@ -29,9 +29,10 @@ html {
     height: 48rem;
     display: flex;
     position: absolute;
-    top: -.8rem;
-    left: -2.8rem;
+    top: -15.8rem;
+    left: -50rem;
     z-index: 1;
+    transform: scale(-.9);
 }
 
 .about {
