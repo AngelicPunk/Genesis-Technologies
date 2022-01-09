@@ -96,6 +96,7 @@ background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba
     }
     .nav {
         visibility: hidden;
+        height: 10rem;
     }
     .background {
         width: 100%;
@@ -119,8 +120,8 @@ background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba
         flex-flow: column;
         top: 34rem;
         color: #BA91F2;
-        width: 80%;
-        margin: 11rem 1.2rem;
+        width: 75%;
+        margin: 12rem 2.2rem;
         padding: 0 2rem 5rem 0;
         z-index: 1;
         text-align: center;
@@ -145,4 +146,27 @@ background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba
         display: block;
         position: relative;
     }
+
+    .about {
+        visibility: hidden;
+        color: #BA91F2;
+        z-index: 1;
+        font-size: 1rem;
+        display: flex;
+        position: relative;
+        height: 10rem;
+        width: 15rem;
+        margin: auto;
+        top: 60rem;
+        font-weight: lighter;
+    }
+
+    .refs {
+        position: absolute;
+        top: 144rem;
+        display: block;
+        color: #BA91F2;
+        background-color: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    }
+
 }
