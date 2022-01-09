@@ -11,17 +11,16 @@ html {
     font-family: 'Orbitron', sans-serif;
     font-size: 1.5rem;
     display: flex;
+    position: fixed;
     font-weight: 400;
     color: rgb(197, 153, 238);
     z-index: 2;
-    position: absolute;
-    right: 5rem;
     height: 4rem;
     background-color: rgba(214,206,242, .53);
-    border-radius: 5rem 5rem;
-    right: 4rem;
-    width: 11rem;
-    top: 1rem;
+    width: 100rem;
+    top: 0rem;
+    left: 0rem;
+    padding: 0 2rem;
 }
 
 .background {
@@ -29,18 +28,30 @@ html {
     height: 48rem;
     display: flex;
     position: absolute;
-    top: -15.8rem;
+    top: -20rem;
     left: -50rem;
     z-index: 1;
     transform: scale(-.9);
 }
 
-.about {
+.mission {
+    filter: drop-shadow(0 0 0.75rem magenta);
     position: relative;
-    top: 60rem;
+    top: 54rem;
     color: #BA91F2;
-    height: 50rem;
+    z-index: 1;
+    background: rgb(0,13,79);
+background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem 5rem;
+    height: 30rem;
+    width: 75rem;
+    display: flex;
+    flex-flow: column;
+    margin: auto;
+    padding: 3rem;
 }
+
+
 
 #missionStatementTitle {
     font-size: 4rem;
@@ -48,48 +59,71 @@ html {
     display: flex;
     position: relative;
     margin: 5rem 9.5rem;
-
-
+    top: -1.5rem;
 }
 
-#missionStatement {
+#missionStatementText {
     font-size: 2rem;
     position: relative;
     justify-content: end;
     display: flex;
     text-align: center;
-    width: 80rem;
-    margin: 5rem 9.5rem;
+    top: -6rem;
+    padding-bottom: 15rem;
 }
+
+.about {
+    color: #BA91F2;
+    z-index: 1;
+    font-size: 3rem;
+    display: flex;
+    position: relative;
+    height: 50rem;
+    width: 20rem;
+    margin: auto;
+    top: 60rem;
+    font-weight: lighter;
 }
-@media only screen and (max-width: 1000px) {
+  
+
+}
+@media only screen and (max-width: 800px) {
     html {
         font-family: 'Orbitron', sans-serif;
         background-color: #160A40;
         overflow-x: hidden;
-        width: 400px;
+        width: 100%;
     }
     .nav {
         visibility: hidden;
     }
     .background {
-        width: 105rem;
-        height: 48rem;
+        width: 100%;
+        height: 20rem;
         display: flex;
+        transform: scale(-.99);
         position: absolute;
-        top: -15.8rem;
-        left: -50rem;
+        left: -56rem;
         z-index: 1;
-        transform: scale(-.9);
+        margin: 3rem 56rem;
+        padding: 30rem 0;
     }
 
-    .about {
+    .mission {
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 5rem 5rem;
         position: relative;
         display: flex;
-        top: 55rem;
+        flex-flow: column;
+        top: 34rem;
         color: #BA91F2;
-        width: 40rem;
-        margin: 0 3rem;
+        width: 80%;
+        margin: 11rem 1.2rem;
+        padding: 0 2rem 5rem 0;
+        z-index: 1;
+        text-align: center;
     }
 
     #missionStatementTitle {
@@ -100,18 +134,15 @@ html {
         top: 2rem;
         font-weight: 600;
         padding-bottom: 1.1rem;
+        left: 1rem;
     }
     
-    #missionStatement {
-        font-weight: 400;
-        font-size: 1rem;
-        line-height: 2.5rem;
-        display: flex;
-        position: relative;
+    #missionStatementText {
+        line-height: 2rem;
         text-align: center;
-        top: 6rem;
-        right: 20rem;
-       margin: 0 2.2rem;
-        padding: 2rem 0;
+        margin: auto;
+        left: 1rem;
+        display: block;
+        position: relative;
     }
 }

@@ -19,6 +19,7 @@
     <ul class="navbar justify-content-center" style="list-style-type: none;">
         <li class="nav-item">
             <a class="nav-link" href="#">Contact</a>
+            <a href="#missionStatement" class="nav-link nav-link-2">Mission Statement</a>
         </li>
         <li class="nav-item">
             <a class="nav-link" href="#">
@@ -32,18 +33,28 @@
  <source src="media/Copy of Copy of [Original size] Genesis Creations.mp4" type="video/mp4">
         </video>
     </div>
+    <div class="mission" id="missionStatement">
 
-    <div class="about">
-       <h1 id="missionStatementTitle"> Mission Statement </h1>
-       <p id="missionStatement">
+       <h1 id="missionStatementTitle" > Mission Statement </h1>
+       <p id="missionStatementText" >
         The definition of the word Genesis states that it is the “the origin or mode of formation of something” and at my company, Genesis Technologies, I strive to create websites, apps, and marketing goals that are curated to each individual client. For Genesis Technologies, the ultimate goal is to create anything the clients can imagine. 
        </p>
         <script> 
-            ScrollReveal().reveal('.about', {delay: 700});
+           var slideUp = {
+            distance: '150%',
+         origin: 'bottom',
+           opacity: null,
+            delay: 900
+};
+
+ScrollReveal().reveal('.mission', slideUp);
+
         </script>
     </div>
     <div class="Components"></div>
-   
+   <div class="about">
+      <h6> Hi, I'm Angela Rose Hernandez and i'm the Owner and Developer of Genesis Technologies.</h6>
+   </div>
 
 
     <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script> 
