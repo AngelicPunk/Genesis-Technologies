@@ -155,6 +155,14 @@ html {
         padding: 30rem 0;
     }
 
+    #lottie {
+        display: flex;
+        position: relative;
+        top: 3rem;
+        justify-content: center;
+        left: 1rem;
+        }
+
     .mission {
         background: rgb(0,13,79);
         background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
@@ -199,19 +207,44 @@ html {
         font-size: 1rem;
         display: flex;
         position: relative;
-        height: 10rem;
-        width: 15rem;
+        width: 75%;
+        flex-flow: column;
         margin: auto;
-        top: 60rem;
+        top: 45rem;
         font-weight: lighter;
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 5rem;
     }
+
+    .lottie2 {
+        display: flex;
+        top: -7rem;
+        position: relative;
+        }
+
+    .about>h6 {
+        top: 15rem;
+        display: flex;
+        position: relative;
+        justify-content: center;
+        margin: -1rem 2rem;
+        font-size: 1rem;
+        }
 
     .refs {
         position: absolute;
-        top: 144rem;
-        display: block;
+        top: 169rem;
+        display: flex;
         color: #BA91F2;
-        background-color: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 1rem;
+        width: 100%;
+        left: 0;
+        text-align: center;
     }
 
 }
