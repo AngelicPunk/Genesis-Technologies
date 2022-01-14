@@ -220,17 +220,20 @@ html {
 
     .lottie2 {
         display: flex;
-        top: -7rem;
+        top: -1rem;
         position: relative;
+        justify-content: center;
+        margin: 3rem 2rem;
         }
 
     .about>h6 {
-        top: 15rem;
         display: flex;
         position: relative;
         justify-content: center;
-        margin: -1rem 2rem;
         font-size: 1rem;
+        top: 18rem;
+        margin: -5rem 2rem;
+        width: 75%;
         }
 
     .refs {
