@@ -19,6 +19,8 @@
   "homepage": "https://github.com/AngelicPunk/Genesis-Technologies#readme",
   "dependencies": {
     "babel-cli": "^6.26.0",
-    "babel-preset-react-app": "^3.1.2"
+    "babel-preset-react-app": "^3.1.2",
+    "bodymovin": "^4.13.0",
+    "lottie-web": "^5.8.1"
   }
 }

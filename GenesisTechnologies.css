@@ -32,6 +32,17 @@ html {
     left: -50rem;
     z-index: 1;
     transform: scale(-.9);
+    padding-bottom: 10rem;
+}
+
+#lottie {
+    z-index: 2;
+    display: flex;
+    position: relative;
+    width: 50rem;
+    justify-content: left;
+    left: -11rem;
+    top: 2rem;
 }
 
 .mission {
@@ -41,35 +52,39 @@ html {
     color: #BA91F2;
     z-index: 1;
     background: rgb(0,13,79);
-background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
-    border-radius: 5rem 5rem;
-    height: 30rem;
-    width: 75rem;
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+    height: 25rem;
+    width: 83rem;
     display: flex;
     flex-flow: column;
     margin: auto;
-    padding: 3rem;
+    padding: 5rem;
+    padding-bottom: 10rem;
 }
 
 
 
 #missionStatementTitle {
-    font-size: 4rem;
-    justify-content: center;
+    font-size: 3.2rem;
+    justify-content: right;
     display: flex;
     position: relative;
-    margin: 5rem 9.5rem;
-    top: -1.5rem;
+    margin: 3rem 5rem;
+    top: -31.5rem;
 }
 
 #missionStatementText {
-    font-size: 2rem;
+    font-size: 1.4rem;
     position: relative;
-    justify-content: end;
+    justify-content: center;
     display: flex;
     text-align: center;
-    top: -6rem;
+    top: -34rem;
     padding-bottom: 15rem;
+    line-height: 2;
+    right: -44rem;
+    width: 41rem;
 }
 
 .about {
@@ -78,13 +93,43 @@ background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba
     font-size: 3rem;
     display: flex;
     position: relative;
-    height: 50rem;
-    width: 20rem;
+    padding: 2rem;
+    height: 25rem;
+    width: 83rem;
     margin: auto;
     top: 60rem;
     font-weight: lighter;
+    filter: drop-shadow(0 0 0.75rem magenta);
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+}
+
+.about>h6 {
+    font-weight: 400;
+    font-size: 1.8rem;
+    padding: 2rem;
 }
   
+.lottie2 {
+    width: 24rem;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    transform: scale(1.7);
+    margin: 3.5rem 5rem;
+    }
+
+.refs {
+    height: 5rem;
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    filter: drop-shadow(0 0 0.75rem magenta);
+    z-index: 2;
+    position: relative;
+    display: flex;
+    bottom: -69rem;
+}
 
 }
 @media only screen and (max-width: 800px) {
