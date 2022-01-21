@@ -264,8 +264,25 @@ html {
         position: relative;
     }
 
-    .about {
+    /* .about {
         visibility: hidden;
+        color: #BA91F2;
+        z-index: 1;
+        font-size: 1rem;
+        display: flex;
+        position: relative;
+        width: 75%;
+        flex-flow: column;
+        margin: auto;
+        top: 45rem;
+        font-weight: lighter;
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 5rem;
+    } */
+
+    .sent1 {
         color: #BA91F2;
         z-index: 1;
         font-size: 1rem;
@@ -282,6 +299,45 @@ html {
         border-radius: 5rem;
     }
 
+    .sent2 {
+        color: #BA91F2;
+        z-index: 1;
+        font-size: 1rem;
+        display: flex;
+        position: relative;
+        width: 75%;
+        flex-flow: column;
+        margin: auto;
+        top: 45rem;
+        font-weight: lighter;
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 5rem;
+    }
+
+    .sent3 {
+        color: #BA91F2;
+        z-index: 1;
+        font-size: 1rem;
+        display: flex;
+        position: relative;
+        width: 75%;
+        flex-flow: column;
+        margin: auto;
+        top: 45rem;
+        font-weight: lighter;
+        background: rgb(0,13,79);
+        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+        filter: drop-shadow(0 0 0.75rem magenta);
+        border-radius: 5rem;
+    }
+
+    .lottie3 {
+        visibility: hidden;
+        display: none;
+    }
+
     .lottie2 {
         display: flex;
         top: -4rem;
@@ -290,7 +346,7 @@ html {
         margin: 3rem 2rem;
         }
 
-    .about>h6 {
+    /* .about>h6 {
         display: flex;
         position: relative;
         justify-content: center;
@@ -298,7 +354,7 @@ html {
         top: 16rem;
         margin: -5rem 2rem;
         text-align: center;
-        }
+        } */
 
     .refs {
         position: absolute;
