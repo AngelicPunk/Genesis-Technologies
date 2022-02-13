@@ -31,7 +31,7 @@
     </ul>
     </div>
     <div class="background">
-        <video autoplay loop  class="background">
+        <video autoplay loop muted class="background">
  <source src="media/Copy of Copy of [Original size] Genesis Creations.mp4" type="video/mp4">
         </video>
     </div>
@@ -62,6 +62,7 @@ ScrollReveal().reveal('.mission', slideUp);
 </section >
 
    <div class="about">
+       <h1 class="about-me">About Me</h1>
       <h6 class="sent1" > Hi, I'm Angela Rose Hernandez and i'm the Owner and Developer of Genesis Technologies. I started learning about Web Development and Programming in 2021 and soon, I was certified in HTML5 and CSS3. I absolutely fell in love with Web Development, and keep falling more in love!</h6>
         <h6 class="sent2" > I aspire to make my websites absolutely unique to each individual client, there's nothing I'll say "No" to when it comes to a website. If there's something I can't do then I will learn how to do it, and do it well.  </h6>
       <div class="lottie2"> 
@@ -77,9 +78,16 @@ ScrollReveal().reveal('.mission', slideUp);
     opacity: null,
      delay: 700
 };
-
+    var slideUp1 = {
+        distance: '150%',
+  origin: 'bottom',
+    opacity: null,
+     delay: 600
+    };
+ScrollReveal().reveal('.about-me', slideUp1);
 ScrollReveal().reveal('.sent1', slideUp);
 ScrollReveal().reveal('.lottie2', slideUp);
+
  </script>
     <div class="lottie3">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
@@ -94,7 +102,13 @@ ScrollReveal().reveal('.lottie2', slideUp);
     };
     ScrollReveal().reveal('.sent2', slideUp);
     ScrollReveal().reveal('.lottie3', slideUp);
-  
+    </script>
+  <section class="projects">
+      <h1 class="latest">Latest Projects</h1>
+    <div class="loop">
+        <iframe src="https://loopstudios-landing-page-angelicpunk.vercel.app/" frameborder="0"></iframe>
+        </div>
+  </section>
 </body>
 
 <footer class="refs">

@@ -7,8 +7,11 @@
         {
             "type": "firefox",
             "request": "launch",
-            "name": "Open index.HTML",
-            "file": "c:\\Users\\ilove\\Documents\\projects\\Genesis Technologies\\index.HTML"
+            "reAttach": true,
+            "name": "Launch index.html",
+            "file": "C:/Users/ilove/Documents/projects/Genesis%20Technologies/index.HTML"
         }
+        
+       
     ]
 }
