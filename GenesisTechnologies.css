@@ -93,14 +93,16 @@ html {
     font-size: 3.5rem;
     display: flex;
     position: relative;
-    top: 75rem;
+    top: 70rem;
     text-align: center;
-    padding: 5rem;
+    padding: 2rem;
     justify-content: center;
     filter: drop-shadow(0 0 0.75rem magenta);
     background: rgb(0,13,79);
     background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
     border-radius: 5rem;
+    width: 21rem;
+    margin: auto;
 }
 
 .sent1 {
@@ -132,7 +134,7 @@ html {
     height: 14rem;
     width: 35rem;
     margin: auto;
-    top: 116rem;
+    top: 110rem;
     font-weight: lighter;
     filter: drop-shadow(0 0 0.75rem magenta);
     background: rgb(0,13,79);
@@ -150,17 +152,17 @@ html {
     display: flex;
     transform: scale(1.7);
     margin: 3.5rem 5rem;
-    top: 26rem;
+    top: 30rem;
     left: 2.5rem;
     }
 
 .lottie3 {
     display: flex;
     position: relative;
-    top: -35rem;
+    top: 26rem;
     transform: scale(1.7);
     z-index: 1;
-    left: 99rem;
+    left: 93rem;
     margin: auto;
     height: 5rem;
 }
@@ -169,11 +171,21 @@ html {
     position: relative;
     }
 
-.projects>h1 {
+.latest {
     font-family: 'Orbitron';
     color: rgb(197, 153, 238);
     position: relative;
-
+    top: 100rem;
+    font-size: 3rem;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem magenta);
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+    width: 35rem;
+    font-size: 3rem;
+    text-align: center;
+    margin: auto;
 }
 
 iframe {
@@ -182,7 +194,7 @@ iframe {
     }
 .loop {
     position: relative;
-    top: 90rem;
+    top: 105rem;
     margin: 5rem;
     }
 
@@ -194,7 +206,7 @@ iframe {
     z-index: 2;
     position: relative;
     display: flex;
-    bottom: -96rem;
+    bottom: -115rem;
 }
 
 }
@@ -283,39 +295,59 @@ iframe {
         filter: drop-shadow(0 0 0.75rem magenta);
         border-radius: 5rem;
     } */
-
+.about-me {
+    position: relative;    
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    filter: drop-shadow(0 0 0.75rem magenta);
+    border-radius: 5rem;
+    top: 45rem;
+    margin: auto;  
+    color: #BA91F2;
+    z-index: 1;
+    width: 15rem;
+    padding: 0.8rem;
+    text-align: center;
+}
     .sent1 {
         color: #BA91F2;
         z-index: 1;
         font-size: 1rem;
-        display: flex;
         position: relative;
-        width: 75%;
-        flex-flow: column;
+        width: 80%;
         margin: auto;
-        top: 45rem;
+        top: 70rem;
         font-weight: lighter;
         background: rgb(0,13,79);
         background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
         filter: drop-shadow(0 0 0.75rem magenta);
         border-radius: 5rem;
+        padding: 0.8rem;
+        height: 35rem;
+        line-height: 1.9;
+        font-size: 1.2rem;
+        margin: auto;
+        text-align: center;
+
+    }
+    
     }
 
     .sent2 {
+        text-align: center;
         color: #BA91F2;
-        z-index: 0;
-        font-size: 1rem;
-        display: flex;
+        font-size: 1.22rem;
         position: relative;
         width: 75%;
-        flex-flow: column;
         margin: auto;
-        top: 45rem;
+        height: 25rem;
+        top: 100rem;
         font-weight: lighter;
         background: rgb(0,13,79);
         background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
         filter: drop-shadow(0 0 0.75rem magenta);
         border-radius: 5rem;
+        line-height: 1.90;
+        padding: 1rem;
     }
 
     .sent3 {
@@ -336,18 +368,38 @@ iframe {
     }
 
     .lottie3 {
-        visibility: hidden;
-        display: none;
+        display: flex;
+        top: 25rem;
+        position: relative;
+        justify-content: center;
+        margin: 3rem 2rem;
     }
 
     .lottie2 {
         display: flex;
-        top: -4rem;
+        top: -21rem;
         position: relative;
         justify-content: center;
         margin: 3rem 2rem;
         }
 
+
+        .latest {
+            font-family: 'Orbitron';
+            color: rgb(197, 153, 238);
+            position: relative;
+            top: 70rem;
+            font-size: 1.8rem;
+            justify-content: center;
+            filter: drop-shadow(0 0 0.75rem magenta);
+            background: rgb(0,13,79);
+            background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+            border-radius: 5rem;
+            width: 17rem;
+            text-align: center;
+            margin: auto;
+            padding: .8rem;
+        }
     /* .about>h6 {
         display: flex;
         position: relative;
@@ -358,9 +410,19 @@ iframe {
         text-align: center;
         } */
 
+        iframe {
+            width: 90rem;
+            height: 35rem;
+            }
+        .loop {
+            position: relative;
+            top: 80rem;
+            margin: 5rem;
+            }
+
     .refs {
         position: absolute;
-        top: 169rem;
+        bottom: -330rem;
         display: flex;
         color: #BA91F2;
         background: rgb(0,13,79);
