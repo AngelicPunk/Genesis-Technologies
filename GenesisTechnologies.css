@@ -87,23 +87,21 @@ html {
     width: 41rem;
 }
 
-/* .about {
+.about-me {
     color: #BA91F2;
     z-index: 1;
-    font-size: 3rem;
+    font-size: 3.5rem;
     display: flex;
     position: relative;
-    padding: 2rem;
-    height: 25rem;
-    width: 83rem;
-    margin: auto;
-    top: 80rem;
-    font-weight: lighter;
+    top: 75rem;
+    text-align: center;
+    padding: 5rem;
+    justify-content: center;
     filter: drop-shadow(0 0 0.75rem magenta);
     background: rgb(0,13,79);
     background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
     border-radius: 5rem;
-} */
+}
 
 .sent1 {
     color: #BA91F2;
@@ -115,7 +113,7 @@ html {
     height: 14rem;
     width: 49rem;
     margin: auto;
-    top: 80rem;
+    top: 85rem;
     font-weight: lighter;
     filter: drop-shadow(0 0 0.75rem magenta);
     background: rgb(0,13,79);
@@ -134,7 +132,7 @@ html {
     height: 14rem;
     width: 35rem;
     margin: auto;
-    top: 94rem;
+    top: 116rem;
     font-weight: lighter;
     filter: drop-shadow(0 0 0.75rem magenta);
     background: rgb(0,13,79);
@@ -143,25 +141,7 @@ html {
     left: -22rem;
     line-height: 2.45rem;
 }
-.sent3 {
-    color: #BA91F2;
-    z-index: 1;
-    font-size: 1.5rem;
-    display: flex;
-    position: relative;
-    padding: 4rem;
-    height: 14rem;
-    width: 33rem;
-    margin: auto;
-    top: 116rem;
-    font-weight: lighter;
-    filter: drop-shadow(0 0 0.75rem magenta);
-    background: rgb(0,13,79);
-    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
-    border-radius: 5rem;
-    right: -22rem;
-    line-height: 2.45rem;
-}
+
   
 .lottie2 {
     width: 17rem;
@@ -170,19 +150,41 @@ html {
     display: flex;
     transform: scale(1.7);
     margin: 3.5rem 5rem;
-    top: 19rem;
+    top: 26rem;
     left: 2.5rem;
     }
 
 .lottie3 {
     display: flex;
     position: relative;
-    top: 34rem;
+    top: -35rem;
     transform: scale(1.7);
     z-index: 1;
-    left: 95rem;
+    left: 99rem;
     margin: auto;
+    height: 5rem;
 }
+
+.projects {
+    position: relative;
+    }
+
+.projects>h1 {
+    font-family: 'Orbitron';
+    color: rgb(197, 153, 238);
+    position: relative;
+
+}
+
+iframe {
+    width: 90rem;
+    height: 35rem;
+    }
+.loop {
+    position: relative;
+    top: 90rem;
+    margin: 5rem;
+    }
 
 .refs {
     height: 5rem;
