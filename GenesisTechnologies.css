@@ -330,7 +330,6 @@ iframe {
 
     }
     
-    }
 
     .sent2 {
         text-align: center;
@@ -400,24 +399,17 @@ iframe {
             margin: auto;
             padding: .8rem;
         }
-    /* .about>h6 {
-        display: flex;
-        position: relative;
-        justify-content: center;
-        font-size: 1rem;
-        top: 16rem;
-        margin: -5rem 2rem;
-        text-align: center;
-        } */
 
-        iframe {
-            width: 90rem;
+        #iframe1 {
+            width: 27rem;
             height: 35rem;
             }
         .loop {
             position: relative;
             top: 80rem;
             margin: 5rem;
+            width: 10%;
+            height: 35rem;
             }
 
     .refs {
@@ -433,5 +425,4 @@ iframe {
         left: 0;
         text-align: center;
     }
-
 }
