@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+< lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,12 +10,15 @@
     <link rel="stylesheet" href="GenesisTechnologies.css">
     <title>Genesis Technologies</title>
     <script src="https://unpkg.com/scrollreveal@4.0.0/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 
     </script>
 
 </head>
-<body>
-    <section>
+<body id="body">
+    <section id="landing">
     <div class="nav">
         
     <ul class="navbar justify-content-center" style="list-style-type: none;">
@@ -36,9 +39,9 @@
         </video>
     </div>
 </section>
-<section>
+<section id="missionStatement"
     
-    <div class="mission" id="missionStatement">
+    <div class="mission" >
         <div id="lottie">    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
             <lottie-player src="https://assets6.lottiefiles.com/packages/lf20_cekfidvh.json"  background="transparent"  speed="1"   loop autoplay></lottie-player>   </div>
         
@@ -52,7 +55,7 @@
             distance: '150%',
          origin: 'bottom',
            opacity: null,
-            delay: 900
+            delay: 600
 };
 
 ScrollReveal().reveal('.mission', slideUp);
@@ -76,7 +79,7 @@ ScrollReveal().reveal('.mission', slideUp);
      distance: '150%',
   origin: 'bottom',
     opacity: null,
-     delay: 700
+     delay: 600
 };
     var slideUp1 = {
         distance: '150%',
@@ -98,7 +101,7 @@ ScrollReveal().reveal('.lottie2', slideUp);
          distance: '150%',
       origin: 'bottom',
         opacity: null,
-         delay: 700
+         delay: 600
     };
     ScrollReveal().reveal('.sent2', slideUp);
     ScrollReveal().reveal('.lottie3', slideUp);
