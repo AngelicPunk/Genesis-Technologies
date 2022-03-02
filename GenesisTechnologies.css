@@ -19,7 +19,7 @@ html {
     position: fixed;
     font-weight: 400;
     color: rgb(197, 153, 238);
-    z-index: 2;
+    z-index: 10;
     height: 4rem;
     background-color: rgba(214,206,242, .53);
     width: 100%;
