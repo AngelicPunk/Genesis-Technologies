@@ -1,7 +1,6 @@
 {
   "name": "genesis-technologies",
   "version": "1.0.0",
-  "description": "",
   "main": "Components.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -22,5 +21,7 @@
     "babel-preset-react-app": "^3.1.2",
     "bodymovin": "^4.13.0",
     "lottie-web": "^5.8.1"
-  }
+  },
+  "devDependencies": {},
+  "description": ""
 }
