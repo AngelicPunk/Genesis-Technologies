@@ -270,7 +270,7 @@ iframe {
 }
 
 }
-@media only screen and (max-width: 799px) {
+@media only screen and (max-width: 800px) {
     html {
         font-family: 'Orbitron', sans-serif;
         background-color: #160A40;
@@ -281,16 +281,15 @@ iframe {
         visibility: hidden;
         height: 10rem;
     }
+    #body {
+        background-color: #160A40;
+        font-family: 'Orbitron', sans-serif;
+    }
     .background {
         width: 100%;
-        height: 20rem;
         display: flex;
-        transform: scale(-.99);
         position: absolute;
-        left: -56rem;
         z-index: 1;
-        margin: 3rem 56rem;
-        padding: 30rem 0;
     }
 
     #lottie {
