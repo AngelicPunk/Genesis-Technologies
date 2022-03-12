@@ -4,6 +4,8 @@
   "description": "",
   "main": "contact.js",
   "scripts": {
+    "start": "contact.HTML",
+    "build": "contact/contact.HTML build --prod",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
