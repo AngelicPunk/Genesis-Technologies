@@ -17,19 +17,38 @@ html {
 .email-link {
     position: relative;
     padding: 0rem 0rem 0 3rem;
+    transform: scale(-0.6);
+}
+
+.email-link:hover {
+    position: relative;
+    padding: 0rem 0rem 0 3rem;
     transform: scale(-0.7);
+    list-style: circle;
 }
 
 .github{ 
     position: relative;
     padding: 4rem 5rem 0 5rem;
-    transform: scale(1.4);
+    transform: scale(1.25);
+}
+
+.github:hover{ 
+    position: relative;
+    padding: 4rem 5rem 0 5rem;
+    transform: scale(1.50);
 }
 
 .linked-in {
     position: relative;
-    padding: 4rem 5rem 0 5rem;
-    transform: scale(1.3);
+    padding: 4rem 5rem 0 6rem;
+    transform: scale(1.2);
+}
+
+.linked-in:hover {
+    position: relative;
+    padding: 4rem 5rem 0 6rem;
+    transform: scale(1.4);
 }
 
 .nav {
@@ -218,6 +237,73 @@ html {
     height: 5rem;
 }
 
+.skills {
+    font-family: 'Orbitron';
+    color: rgb(197, 153, 238);
+    position: relative;
+    top: 433rem;
+    font-size: 3.5rem;
+    justify-content: center;
+    /* filter: drop-shadow(0 0 0.75rem magenta); */
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+    width: 80%;
+    font-size: 2.3rem;
+    text-align: center;
+    margin: 0 10%;
+    height: -5rem;
+    display: grid;
+    grid-template-areas: "title title"
+                           " col1    col2";
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 4rem;
+}
+
+.skills-title {
+    grid-area: title;
+    filter: drop-shadow(0 0 0.75rem magenta);
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    width: 16%;
+    border-radius: 5rem;
+    justify-content: center;
+    margin: auto;
+    padding: 1rem;
+}
+
+.skills-list {
+    /* grid-template-columns: 1fr 1fr; */
+    /* grid-template-rows: 4rem 4rem 4rem 4rem 4rem; */
+}
+
+.col1 {
+     font-family: 'Orbitron';
+    color: rgb(197, 153, 238);
+    position: relative;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem magenta);
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+    grid-area: col1;
+    padding: 1rem;
+    width: 80%;
+    margin: auto;
+}
+.col2 {
+    font-family: 'Orbitron';
+    color: rgb(197, 153, 238);
+    position: relative;
+    justify-content: center;
+    filter: drop-shadow(0 0 0.75rem magenta);
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    border-radius: 5rem;
+    grid-area: col2;
+    padding: 1rem;
+    width: 80%;
+}
 .projects {
     position: absolute;
     width: 100%;
