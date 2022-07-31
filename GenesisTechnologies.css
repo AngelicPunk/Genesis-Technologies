@@ -6,12 +6,14 @@ html {
     background-color: #160A40;
     overflow-x: hidden;
     width: 100%;
+    display: flex
 }
 
 
 #body {
     background-color: #160A40;
-
+    display: flex;
+    width: 100%;
 }
 
 .email-link {
@@ -31,6 +33,9 @@ html {
     position: relative;
     padding: 4rem 5rem 0 5rem;
     transform: scale(1.25);
+    display: flex;
+    right: 2.5rem;
+    top: -2.3rem;
 }
 
 .github:hover{ 
@@ -41,13 +46,12 @@ html {
 
 .linked-in {
     position: relative;
-    padding: 4rem 5rem 0 6rem;
-    transform: scale(1.2);
+    transform: scale(1.3);
+    display: flex;
 }
 
 .linked-in:hover {
     position: relative;
-    padding: 4rem 5rem 0 6rem;
     transform: scale(1.4);
 }
 
@@ -55,8 +59,10 @@ html {
     font-family: 'Orbitron', sans-serif;
     position: relative;
     display: flex;
-    width: 100%;
-    justify-content: right;
+    justify-content: space-between;
+    margin: 0 10rem;
+    width: 30%;
+    float: right;
     z-index: 5;
     float: inline-ends;
   
@@ -80,25 +86,26 @@ html {
     z-index: 2;
     display: flex;
     position: relative;
-    width: 65%;
+    width: 35%;
     justify-content: left;
-    left: -15rem;
     top: 11rem;
+    transform: scale(2);
+
 }
 
 #landing {
     position: absolute;
-    height: 100rem;
+    display: block;
 }
 
 #missionStatement {
     position: absolute;
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     width: 75%;
     height: 61rem;
     margin: 17rem;
-    top: 106rem;
+    top: 125rem;
     font-family: "Orbitron";
 }
 .mission {
@@ -123,13 +130,11 @@ html {
 
 #missionStatementTitle {
     font-size: 6rem;
-    justify-content: right;
+    justify-content: center;
     display: flex;
     position: relative;
-    margin: 3rem 5rem;
     top: -34.5rem;
     text-align: center;
-    justify-content: center;
     font-weight: normal;
 }
 
@@ -175,11 +180,10 @@ html {
 .sent1 {
     color: #BA91F2;
     z-index: 1;
-    font-size: 2.5rem;
+    font-size: 2rem;
     display: flex;
     position: absolute;
-    padding: 7rem;
-    height: 20%;
+    padding: 6rem;
     width: 44%;
     margin: 0 5%;
     top: 30%;
@@ -227,12 +231,12 @@ html {
     }
 
 .lottie3 {
-    display: flex;
+    display: inline-flex;
     position: absolute;
     top: 355rem;
     transform: scale(2);
     z-index: .5;
-    left: 72%;
+    left: 66%;
     margin: auto;
     height: 5rem;
 }
@@ -244,9 +248,6 @@ html {
     top: 433rem;
     font-size: 3.5rem;
     justify-content: center;
-    /* filter: drop-shadow(0 0 0.75rem magenta); */
-    background: rgb(0,13,79);
-    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
     border-radius: 5rem;
     width: 80%;
     font-size: 2.3rem;
@@ -270,11 +271,6 @@ html {
     justify-content: center;
     margin: auto;
     padding: 1rem;
-}
-
-.skills-list {
-    /* grid-template-columns: 1fr 1fr; */
-    /* grid-template-rows: 4rem 4rem 4rem 4rem 4rem; */
 }
 
 .col1 {
@@ -326,7 +322,7 @@ html {
     width: 50rem;
     font-size: 3rem;
     text-align: center;
-    margin: 0 35%;
+    margin: 0 27%;
     height: -5rem;
     display: flex;
     padding: 2.5%;
@@ -351,7 +347,7 @@ iframe {
     z-index: 2;
     position: absolute;
     display: flex;
-    bottom: -550rem;
+    bottom: -622rem;
     width: 100%;
 }
 
@@ -397,7 +393,7 @@ iframe {
         top: 34rem;
         color: #BA91F2;
         width: 75%;
-        margin: 10rem 6rem;
+        margin: 4.5rem;
         padding: 2rem 3rem 5rem 2rem;
         z-index: 1;
         text-align: center;
@@ -423,23 +419,7 @@ iframe {
         position: relative;
     }
 
-    /* .about {
-        visibility: hidden;
-        color: #BA91F2;
-        z-index: 1;
-        font-size: 1rem;
-        display: flex;
-        position: relative;
-        width: 75%;
-        flex-flow: column;
-        margin: auto;
-        top: 45rem;
-        font-weight: lighter;
-        background: rgb(0,13,79);
-        background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
-        filter: drop-shadow(0 0 0.75rem magenta);
-        border-radius: 5rem;
-    } */
+
 .about-me {
     position: relative;    
     background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
@@ -461,14 +441,14 @@ iframe {
         position: relative;
         width: 80%;
         margin: auto;
-        top: 106rem;
+        top: 112rem;
         font-weight: lighter;
         background: rgb(0,13,79);
         background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
         filter: drop-shadow(0 0 0.75rem magenta);
         border-radius: 5rem;
         padding: 1.5rem;
-        height: 35rem;
+        height: 49rem;
         line-height: 1.9;
         font-size: 1.7rem;
         margin: auto;
@@ -478,9 +458,10 @@ iframe {
     
 
     .sent2 {
+        display: block;
         text-align: center;
         color: #BA91F2;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         position: relative;
         width: 75%;
         margin: auto;
@@ -528,6 +509,21 @@ iframe {
         margin: 3rem 2rem;
         }
 
+        .skills {
+            display: flex;
+            justify-content: center;
+            position: relative;
+            height: 43rem;
+            top: 92rem;
+            flex-flow: wrap;
+            margin: 4rem;
+            color: #BA91F2;
+            z-index: 5;
+            color: #BA91F2;
+            filter: drop-shadow(0 0 0.75rem magenta);
+            background: rgb(0,13,79);
+            background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+          }
 
         .latest {
             font-family: 'Orbitron';
@@ -558,9 +554,59 @@ iframe {
             height: 35rem;
             }
 
+
+            .projects {
+                position: absolute;
+                display: block;
+                top: 318rem;
+                margin: 1.5rem;
+              }
+
+              .skills-title {
+                width: 49%;
+                display: f;
+                background: radial-gradient(circle, rgb(0, 13, 79) 0%, rgb(0, 16, 97) 0%, rgb(22, 10, 64) 56%);
+                filter: drop-shadow(0 0 0.75rem fuchsia);
+                border-radius: 2rem;
+                margin: 2rem 8rem;
+                padding: .3rem;
+                }
+
+                .skills-list.col1 {
+                    display: flex;
+                    flex-direction: column;
+                    width: 63%;
+                    height: 13rem;
+                    flex-wrap: wrap;
+                    flex: auto;
+                    font-size: 1.6rem;
+                    line-height: 2.6rem;    
+                    }
+
+                .skills-list.col2 {
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: right;
+                    width: 65%;
+                    flex-basis: fit-content;
+                    font-size: 1.65rem;
+                    height: inherit;
+                    line-height: 2.8rem;
+                    }
+
+                        .sent2 {
+                        height: 27rem;
+                        }
+                        .mission {
+                        top: 46rem;
+                        }
+                        .background {
+                        top: 8rem;
+                        }
+
     .refs {
         position: absolute;
-        bottom: -330rem;
+        bottom: -455rem;
         display: flex;
         color: #BA91F2;
         background: rgb(0,13,79);
