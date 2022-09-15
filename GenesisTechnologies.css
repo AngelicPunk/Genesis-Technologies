@@ -501,9 +501,8 @@ iframe {
 
     .lottie2 {
         display: flex;
-        position: relative;
+        position: inherit;
         justify-content: center;
-        top: -12rem;
         }
 
         .skills {
@@ -565,7 +564,6 @@ iframe {
               .skills-title {
                 width: 49%;
                 display: f;
-                background: radial-gradient(circle, rgb(0, 13, 79) 0%, rgb(0, 16, 97) 0%, rgb(22, 10, 64) 56%);
                 filter: drop-shadow(0 0 0.75rem fuchsia);
                 border-radius: 2rem;
                 margin: 2rem 8rem;
