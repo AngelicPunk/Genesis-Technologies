@@ -15,55 +15,130 @@ html {
     display: flex;
     width: 100%;
 }
+.abt  {
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration: #05FF00;
+    }
 
+ .abt:visited{
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration: none;
+ }   
+
+ .abt:hover {
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration-line: underline;
+ }
+.serv {
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration: none;
+
+    }
+.serv:visited {
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration: none;
+
+}
+.serv:hover {
+    padding: 0 2rem;
+    color: #05FF00;
+    text-decoration-line: underline;
+
+}
+.cont {
+    padding: 0 3rem;
+    color: #05FF00;
+    text-decoration: none;
+    }
+.cont:visited {
+    padding: 0 3rem;
+    color: #05FF00;
+    text-decoration-line: underline;
+
+}
+
+.cont:hover {
+    padding: 0 3rem;
+    color: #05FF00;
+    text-decoration-line: underline;
+
+}
 .email-link {
     position: relative;
-    transform: scale(-0.6);
+    transform: scale(-0.4);
+    right: -2rem;
+    top: 12px;
+    margin: 0 0 0 10rem;
 }
 
 .email-link:hover {
     position: relative;
-    transform: scale(-0.7);
-    list-style: circle;
+    transform: scale(-0.5);
+    right: -2rem;
+  top: 12px;
+  margin: 0 0 0 10rem;
 }
 
 .github{ 
     position: relative;
-    transform: scale(1.25);
     display: flex;
-    padding: 0rem 1.2rem 0rem 0rem;
+    padding: 0rem .3rem 0rem 0rem;
+    margin: 0 0 0 1rem;
 }
 
 .github:hover{ 
-    padding: 0rem 1.2rem 0rem 0rem;
+    padding: 0rem .3rem 0rem 0rem;
     position: relative;
-    transform: scale(1.50);
+    transform: scale(1.1);
+    margin: 0 0 0 1rem;
+
 }
 
 .linked-in {
     position: relative;
-    transform: scale(1.3);
     display: flex;
+    margin: 0 0 0 1rem;
+
 }
 
 .linked-in:hover {
     position: relative;
-    transform: scale(1.4);
+    transform: scale(1.1);
+    margin: 0 0 0 1rem;
+
 }
 
 .nav {
     font-family: 'Orbitron', sans-serif;
     position: relative;
     display: flex;
-    justify-content: space-between;
-    margin: 0 5rem;
-    width: 26%;
-    float: right;
+    width: 100%;
+    height: 5rem;
+    top: -.5rem;
     z-index: 5;
     float: inline-ends;
-  
+    background: linear-gradient(360deg, rgba(0, 0, 0, 0.2257) -12.32%, rgba(51, 0, 255, 0.37) 100%);
+background-blend-mode: screen;
+mix-blend-mode: normal;
+box-shadow: -7px 12px 81px -17px #5200FF;
+backdrop-filter: blur(50px);
+padding: 0 1rem;
+left: -1rem;
 }
-
+.nav-lines{
+    border: 1px solid rgb(5, 255, 0);
+    height: 3rem;
+    margin: 1rem;
+    justify-content: start;
+    display: flex;
+    position: relative;
+    margin: 1rem;
+}
 .background {
     width: 100%;
     height: 100%;
