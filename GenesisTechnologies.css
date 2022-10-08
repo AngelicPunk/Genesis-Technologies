@@ -123,12 +123,12 @@ html {
     z-index: 5;
     float: inline-ends;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.2257) -12.32%, rgba(51, 0, 255, 0.37) 100%);
-background-blend-mode: screen;
-mix-blend-mode: normal;
-box-shadow: -7px 12px 81px -17px #5200FF;
-backdrop-filter: blur(50px);
-padding: 0 1rem;
-left: -1rem;
+    background-blend-mode: screen;
+    mix-blend-mode: normal;
+    box-shadow: -7px 12px 81px -17px #5200FF;
+    backdrop-filter: blur(50px);
+    padding: 0 1rem;
+    left: -1rem;
 }
 .nav-lines{
     border: 1px solid rgb(5, 255, 0);
@@ -146,7 +146,6 @@ left: -1rem;
     position: relative;
     z-index: 1;
     transform: scale(-1);
-    margin: -7rem 0;
     justify-content: center;
 }
 
@@ -423,9 +422,42 @@ iframe {
         overflow-x: hidden;
         width: 100%;
     }
+
     .nav {
         visibility: hidden;
         height: 10rem;
+    }
+
+    .burger{ 
+        position: absolute;
+        display: flex;
+        width: 10rem;
+        color: magenta;
+        z-index: 500;
+        height: 5rem;
+    }
+
+    .line1 {
+        z-index: 500;
+        height: 5rem;
+        width: 2rem;
+        color: magenta;
+        border-radius: 2rem;
+    }   
+     .line2 {
+        z-index: 500;
+        height: 5rem;
+        width: 2rem;
+        color: magenta;
+        border-radius: 2rem;
+        
+    }    
+    .line3 {        
+        z-index: 500;
+        height: 5rem;
+        width: 2rem;
+        color: magenta;
+        border-radius: 2rem;
     }
     #body {
         background-color: #160A40;
