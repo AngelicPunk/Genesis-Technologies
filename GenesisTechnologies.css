@@ -432,33 +432,36 @@ iframe {
         position: absolute;
         display: flex;
         width: 10rem;
-        color: magenta;
         z-index: 500;
-        height: 5rem;
+        height: 5rem; 
+        flex-direction: column;
+        justify-content: space-evenly;
     }
-
+/* 
     .line1 {
         z-index: 500;
-        height: 5rem;
-        width: 2rem;
-        color: magenta;
+        height: .5rem;
+        width: 5rem;
+        background-color: magenta;
         border-radius: 2rem;
+
     }   
      .line2 {
         z-index: 500;
-        height: 5rem;
-        width: 2rem;
-        color: magenta;
+        height: .5rem;
+        width: 5rem;
+        background-color: magenta;
         border-radius: 2rem;
         
     }    
     .line3 {        
         z-index: 500;
-        height: 5rem;
-        width: 2rem;
-        color: magenta;
+        height: .5rem;
+        width: 5rem;
+        background-color: magenta;
         border-radius: 2rem;
-    }
+    } */
+    
     #body {
         background-color: #160A40;
         font-family: 'Orbitron', sans-serif;
