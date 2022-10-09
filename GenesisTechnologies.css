@@ -431,17 +431,17 @@ iframe {
     .burger{ 
         position: absolute;
         display: flex;
-        width: 10rem;
+        width: 9rem;
         z-index: 500;
-        height: 3rem; 
+        height: 4rem; 
         flex-direction: column;
         justify-content: space-evenly;
         right: -5rem;
         transition: all 0.3s ease-in-out;
+
     }
 
 
-   
     .line1 {
         z-index: 500;
         height: .2rem;
@@ -449,6 +449,7 @@ iframe {
         background-color: magenta;
         border-radius: 2rem;
         transition: all 0.3s ease-in-out;
+        margin: .1rem 0 ;
     }   
      .line2 {
         z-index: 500;
@@ -457,6 +458,8 @@ iframe {
         background-color: magenta;
         border-radius: 2rem;
         transition: all 0.3s ease-in-out;
+        margin: .1rem 0 ;
+
     }    
     .line3 {        
         z-index: 500;
@@ -465,17 +468,21 @@ iframe {
         background-color: magenta;
         border-radius: 2rem;
         transition: all 0.3s ease-in-out;
+        margin: .1rem 0;
+
     } 
     
     .burger.active .line1 {
-        transform: translateY(.3rem) rotate(45deg);
-        background-color: magenta;
+        transform: translateY(.3rem) rotate(47deg);
+        background-color: lime;
         z-index: 10;
         cursor: pointer;
         width: 3rem;
         border-radius: 2rem;
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
         position: sticky;
+        margin: -.3rem 0;
+
       }
       .burger.active .line2 {
         opacity: 0%;
@@ -485,17 +492,19 @@ iframe {
       }
       
       .burger.active .line3 {
-        transform: translateY(-.3rem) rotate(-50deg);
+        transform: translateY(-.3rem) rotate(-47deg);
         transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
         opacity: 100%;
         cursor: pointer;
         display: flex;
         border-radius: 2rem;
         z-index: 10;
-        background-color: magenta;
+        background-color: lime;
         width: 2.8rem;
         height: 0.2rem;
         position: sticky;
+        margin: .1rem 0;
+
       }
 
     @keyframes fadeBlack {
