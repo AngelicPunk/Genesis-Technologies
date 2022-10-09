@@ -433,35 +433,96 @@ iframe {
         display: flex;
         width: 10rem;
         z-index: 500;
-        height: 5rem; 
+        height: 3rem; 
         flex-direction: column;
         justify-content: space-evenly;
+        right: -5rem;
+        transition: all 0.3s ease-in-out;
     }
-/* 
+
+
+   
     .line1 {
         z-index: 500;
-        height: .5rem;
-        width: 5rem;
+        height: .2rem;
+        width: 3rem;
         background-color: magenta;
         border-radius: 2rem;
-
+        transition: all 0.3s ease-in-out;
     }   
      .line2 {
         z-index: 500;
-        height: .5rem;
-        width: 5rem;
+        height: .2rem;
+        width: 3rem;
         background-color: magenta;
         border-radius: 2rem;
-        
+        transition: all 0.3s ease-in-out;
     }    
     .line3 {        
         z-index: 500;
-        height: .5rem;
-        width: 5rem;
+        height: .2rem;
+        width: 3rem;
         background-color: magenta;
         border-radius: 2rem;
-    } */
+        transition: all 0.3s ease-in-out;
+    } 
     
+    .burger.active .line1 {
+        transform: translateY(.3rem) rotate(45deg);
+        background-color: magenta;
+        z-index: 10;
+        cursor: pointer;
+        width: 3rem;
+        border-radius: 2rem;
+        transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+        position: sticky;
+      }
+      .burger.active .line2 {
+        opacity: 0%;
+        visibility: hidden;
+        display: none;
+        z-index: 0;
+      }
+      
+      .burger.active .line3 {
+        transform: translateY(-.3rem) rotate(-50deg);
+        transition: 1s cubic-bezier(.68,-0.55,.27,1.55);
+        opacity: 100%;
+        cursor: pointer;
+        display: flex;
+        border-radius: 2rem;
+        z-index: 10;
+        background-color: magenta;
+        width: 2.8rem;
+        height: 0.2rem;
+        position: sticky;
+      }
+
+    @keyframes fadeBlack {
+        from{ 
+          background-color: black;
+          opacity: 0%;
+        }
+        to{
+          background-color: black;
+          opacity: 100%;
+        }
+     }
+
+     @keyframes fadeInAndOut {
+        0% { opacity: 0 ;}
+        100% { opacity: 1 ;}
+      }
+
+     .nav .open {
+        display: block;
+        z-index: 1;
+        color: white;
+        height: 5rem;
+        transition: 3s ease-in-out;
+      
+      }
+
     #body {
         background-color: #160A40;
         font-family: 'Orbitron', sans-serif;
