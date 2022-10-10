@@ -21,22 +21,18 @@
         <span id="animate" class="line3"></span>
      </a>
 
-    <div class="nav">
-      <a href="about.html" class="abt"> <h1 >About</h1> </a>
-      <div class="nav-lines"></div>
-      <a href="services.html" class="serv"> <h1 >Services</h1> </a>
-      <div class="nav-lines"></div>
-      <a href="#" class="cont"> <h1 >Contact</h1> </a>
+    <ul class="nav" id="links" style="list-style: none; height: 20rem; height: fit-content; list-style-type: none; text-underline-offset: -15rem; color: magenta;">
+        <li>      <a href="about.html" class="abt"> <h1 >About</h1> </a>   </li>
         <div class="nav-lines"></div>
-    
-        
-           
-            <a class="email-link" href="mailto:angelicpunk@gmail.com?subject=Website Development"> <img src="media\Important Mail icon 2.png" alt="" class="email"></a>
-           <a href="https://github.com/AngelicPunk" class="github" rel="noreferrer noopener" target="_blank">   <img src="media\Github icon.svg" alt="" class="github-icon"> </a>
-           <a href="https://www.linkedin.com/in/angelicpunk/" class="linked-in" rel="noreferrer noopener" target="_blank">    <img src="media\Linkedin icon.svg" alt="" class="linked-in-icon">    </a>
+        <li>                    <a href="services.html" class="serv"> <h1 >Services</h1> </a>     </li>
+        <div class="nav-lines"></div>
+        <li>       <a href="#" class="cont"> <h1 >Contact</h1> </a>   </li>        
+        <div class="nav-lines"></div>  
+        <li class="icons" >   <a class="email-link" id="email" href="mailto:angelicpunk@gmail.com?subject=Website Development"> <img src="media\Important Mail icon 2.png" alt="" class="email"></a> </li>   
+        <li class="icons"> <a href="https://github.com/AngelicPunk" class="github" rel="noreferrer noopener" target="_blank">   <img src="media\Github icon.svg" alt="" class="github-icon"> </a> </li>
+        <li class="icons"> <a href="https://www.linkedin.com/in/angelicpunk/" class="linked-in" rel="noreferrer noopener" target="_blank">    <img src="media\Linkedin icon.svg" alt="" class="linked-in-icon">    </a> </li>
            <!-- <a href="#missionStatement" class="nav-link nav-link-2">Mission Statement</a> -->
-    
-    </div>
+    </ul>
     <div class="background">
         <video autoplay loop muted class="background">
  <source src="media/GenTech.mp4" type="video/mp4">
@@ -57,12 +53,12 @@ const bar = [bar1, bar2, bar3];
 
 hamburger.addEventListener('click', () => {
     hamburger.classList.toggle("active");
-    links.classList.toggle("links");
+    links.classList.toggle("active");
 });
 
 document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
-     hamburger.classList.remove(".active");
-     links.classList.remove(".active");
+     hamburger.classList.remove("active");
+     links.classList.remove("active");
 }));
  </script>
 

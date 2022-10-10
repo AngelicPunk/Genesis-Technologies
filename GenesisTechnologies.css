@@ -129,6 +129,7 @@ html {
     backdrop-filter: blur(50px);
     padding: 0 1rem;
     left: -1rem;
+    font-weight: 400;
 }
 .nav-lines{
     border: 1px solid rgb(5, 255, 0);
@@ -424,23 +425,66 @@ iframe {
     }
 
     .nav {
-        visibility: hidden;
-        height: 10rem;
+        display: none;
+        height: fit-content;
+        background-color: #0c0427;
     }
+
+    .nav.active{
+        display: flex;
+        flex-direction: column;
+        z-index: 900;
+        justify-content: center;
+        text-align: center;
+        transition: 3s ease-in-out;
+        position: relative;
+        animation: fadeIn 1s ease-in;
+      }
+
+@keyframes fadeIn {
+  from{  opacity: 0;}
+
+  to{opacity: 100%}
+}
+
+      #links {
+        z-index: 800;
+        height: 30rem;
+        padding: 2rem; 
+        top: -1rem;
+        left: -1rem;
+        border-radius: 5rem; 
+        position: absolute;
+        color: #ff00ff;
+        width: 89%;
+      } 
+
+#email, .email-link, .email {
+    position: relative;
+    transform: scale(-1rem);
+    height: 4rem;
+}
+
 
     .burger{ 
         position: absolute;
         display: flex;
         width: 9rem;
-        z-index: 500;
+        z-index: 900;
         height: 4rem; 
         flex-direction: column;
         justify-content: space-evenly;
         right: -5rem;
         transition: all 0.3s ease-in-out;
-
+        top: .6rem;
     }
 
+a > h1 {
+    color: magenta;
+    z-index: 600;
+    font-weight: 400;
+    justify-content: center;
+} 
 
     .line1 {
         z-index: 500;
@@ -452,7 +496,7 @@ iframe {
         margin: .1rem 0 ;
     }   
      .line2 {
-        z-index: 500;
+        z-index: 00;
         height: .2rem;
         width: 3rem;
         background-color: magenta;
@@ -506,31 +550,7 @@ iframe {
         margin: .1rem 0;
 
       }
-
-    @keyframes fadeBlack {
-        from{ 
-          background-color: black;
-          opacity: 0%;
-        }
-        to{
-          background-color: black;
-          opacity: 100%;
-        }
-     }
-
-     @keyframes fadeInAndOut {
-        0% { opacity: 0 ;}
-        100% { opacity: 1 ;}
-      }
-
-     .nav .open {
-        display: block;
-        z-index: 1;
-        color: white;
-        height: 5rem;
-        transition: 3s ease-in-out;
-      
-      }
+   
 
     #body {
         background-color: #160A40;
