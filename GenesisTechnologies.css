@@ -5,8 +5,8 @@ html {
     font-family: 'Orbitron', sans-serif;
     background-color: #160A40;
     overflow-x: hidden;
-    width: 100%;
     display: flex;
+    width: 100%;
 }
 
 
@@ -50,11 +50,18 @@ html {
     text-decoration-line: underline;
 
 }
+
+#icons {
+    display: flex;
+    margin-left: 2rem;
+}
+
 .cont {
     padding: 0 3rem;
     color: #05FF00;
     text-decoration: none;
     }
+
 .cont:visited {
     padding: 0 3rem;
     color: #05FF00;
@@ -68,80 +75,70 @@ html {
     text-decoration-line: underline;
 
 }
-.email-link {
+.email {
+    display: flex;
     position: relative;
-    transform: scale(-4);
-    right: -2rem;
+    transform: scale(2);
     height: 2rem;
-    top: 12px;
-    margin: 0 0 0 10rem;
+    top: 2.5rem;
+    margin: 0 1rem;
 }
 
-.email-link:hover {
+.email:hover {
+    display: flex;
     position: relative;
-    transform: scale(-0.5);
-    right: -2rem;
+    transform: scale(2.2);
     height: 2rem;
-
-  top: 12px;
-  margin: 0 0 0 10rem;
+  top: 2.5rem;
 }
 
 .github{ 
     position: relative;
     display: flex;
-    padding: 0rem .3rem 0rem 0rem;
-    margin: 0 0 0 1rem;
 }
 
 .github:hover{ 
-    padding: 0rem .3rem 0rem 0rem;
     position: relative;
     transform: scale(1.1);
-    margin: 0 0 0 1rem;
 
 }
 
 .linked-in {
     position: relative;
     display: flex;
-    margin: 0 0 0 1rem;
-
+    margin-right: 2rem;
 }
 
 .linked-in:hover {
     position: relative;
     transform: scale(1.1);
-    margin: 0 0 0 1rem;
 
 }
 
 .nav {
     font-family: 'Orbitron', sans-serif;
-    position: relative;
+    position: fixed;
     display: flex;
+    justify-content: space-between;
+    align-items: stretch;
     width: 100%;
-    height: 5rem;
-    top: -.5rem;
+    top: -2rem;
+    left: -1rem;
     z-index: 5;
-    float: inline-ends;
     background: linear-gradient(360deg, rgba(0, 0, 0, 0.2257) -12.32%, rgba(51, 0, 255, 0.37) 100%);
     background-blend-mode: screen;
     mix-blend-mode: normal;
     box-shadow: -7px 12px 81px -17px #5200FF;
     backdrop-filter: blur(50px);
-    padding: 0 1rem;
-    left: -1rem;
     font-weight: 400;
 }
+
 .nav-lines{
     border: 1px solid rgb(5, 255, 0);
     height: 3rem;
-    margin: 1rem;
-    justify-content: start;
+    top: 2rem;
     display: flex;
     position: relative;
-    margin: 1rem;
 }
 .background {
     width: 100%;
