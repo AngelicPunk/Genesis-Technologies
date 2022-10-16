@@ -1,9 +1,13 @@
 @media only screen and (max-width: 1000px) { 
+    * {
+        font-weight: 300;
+    }
+
     html {
         background-color: #160A40;
         font-family: 'Orbitron', sans-serif;
-        font-weight: 400;
-        width: 100%;
+        font-weight: 300;
+        overflow-x: hidden;
     }
 
     section {
@@ -41,7 +45,7 @@
         opacity: 100%;
       } 
 
-#email, .email-link, .email {
+.email {
     position: relative;
     transform: scale(-1rem);
     height: 4rem;
@@ -141,19 +145,99 @@
     border: .5px solid #7cf7ff;
     border-radius: 2rem;
     filter: drop-shadow(13px 4px 22px #7cf7ff);    
+
 }
 
-h6 {
+
+#grid {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "email-call1 emailcall2"
+                        "insta instagram"
+                        "facebook fb"
+                        "phone call";
+                        
+    max-height: 20rem;
+    width: 25rem;
     font-size: 1rem;
     text-align: center;
-    font-weight: 400;
-    line-height: 2rem;
-    background: radial-gradient(105.12% 105.7% at 86% 12.38%, #D900FF 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-    filter: drop-shadow(0px 0px 17px #3300FF);
-    border-radius: 107px;
-    padding: 3rem;
-    margin: 2rem;
+    gap: 2rem;
+    margin: 1rem;
 }
+
+#email {
+     transform: scale(.7);
+     margin-top: 1rem;
+}
+
+.emailstuff {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    padding: 1rem;
+    border-radius: 107px;
+    height: fit-content;
+}
+.instastuff {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    height: fit-content;
+    padding: 0 0 3rem 0;
+}
+
+.insta {
+    transform: scale(.7);
+}
+
+.instagram {
+    width: 7rem;
+    margin: auto;
+}
+
+#fb {
+    transform: scale(.7);
+
+}
+
+.fb {
+    margin: auto;
+    width: 8rem;
+}
+
+.fbstuff {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    padding: 0 0 3rem 0;
+    height: fit-content;
+    border-radius: 107px;
+}
+
+#phone {
+    transform: scale(.8);
+}
+
+.phonestuff {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    height: auto;
+    border-radius: 107px; 
+    padding: 2rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
 
@@ -161,12 +245,10 @@ h6 {
     * {
         font-weight: 300;
     }
-
-    
     html {
         background-color: #160A40;
         font-family: 'Orbitron', sans-serif;
-        font-weight: 400;
+        font-weight: 300;
     }
 
     @keyframes transform{
@@ -302,40 +384,121 @@ h6 {
         display: flex;
         position: relative;
     } */
-
+    
+#grid {
+    display: grid;
+    grid-template-columns: auto 2fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: "email-call1 emailcall2"
+                        "insta instagram"
+                        "facebook fb"
+                        "phone call";
+                        
+    height: fit-content;
+    width: 40rem;
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    font-size: 1.4rem;
+    margin: auto;
+}
     .title {
-        margin-top: 8rem;
+        display: grid;
         font-size: 3rem;
-        filter: drop-shadow(13px 4px 22px #7cf7ff); 
+        filter: drop-shadow(13px 4px 22px aqua); 
         width: 12rem;
         text-align: center;
         z-index: 5;
         font-weight: 400;
-        color: #7cf7ff;
+        color: aqua;
+        margin: 2rem 2rem .2rem 2rem;
     }
     
     .line {
-      top: -2rem;
+        left: 2rem;
             display: flex;
             position: relative;
-        width: 12rem;
+        width: 13rem;
         border: .5px solid #7cf7ff;
         border-radius: 2rem;
+        margin: 0 0 3rem 0;
         filter: drop-shadow(13px 4px 22px #7cf7ff);    
     }
-    
-    h6 {
-        font-size: 1.5rem;
-        text-align: center;
-        font-weight: 300;
-        line-height: 2.5rem;
-        margin: auto;
-        color: #7cf7ff;
-        background: radial-gradient(105.12% 105.7% at 86% 12.38%, #D900FF 0%, rgba(0, 0, 0, 0) 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
-        filter: drop-shadow(0px 0px 17px #3300FF);
-        border-radius: 107px;
-        padding: 3rem;
-        width: 50%;
 
+.email-call1 {
+    display: grid;
+    grid-area: email-call1;
+    position: relative;
+    transform: scale(.7);
+}
+    .insta {
+    display: grid;
+    grid-area: insta;
+    transform: scale(.7);
     }
+    
+.facebook {
+    position: relative;
+    transform: scale(.6);
+    grid-area: facebook;
+    left: -1rem;
+}
+.phone {
+    position: relative;
+    transform: scale(.7);
+    grid-area: phone;
+}
+
+.email-call2 {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    font-size: 2.6rem;
+    padding: 1rem;
+    width: 25rem;
+    text-align: center;
+    grid-area: emailcall2;
+    margin: auto;
+    color: aqua;
+}
+
+.fb {
+    text-align: center;
+    margin: auto;   font-size: 1.6rem;
+    padding: 1rem;
+    color: aqua;
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    grid-area: fb;
+}
+
+.instagram {
+    text-align: center;
+    font-size: 1.6rem;
+    padding: 1rem;
+    width: 25rem;
+    color: aqua;
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    margin: auto;
+    grid-area: instagram;
+}
+
+.call {
+    background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
+    box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
+    border-radius: 107px;
+    color: aqua;
+    text-align: center;
+    align-items: center;
+    font-size: 2.6rem;
+    padding: 1rem;
+    width: 25rem;
+    margin: auto;
+}
+
+
+
 }

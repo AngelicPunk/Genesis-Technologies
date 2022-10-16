@@ -5,23 +5,75 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Me</title>
-    <script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-    <script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="contact.css">
+
+  </head> 
+  <section id="landing">
+    <a href="#"class="burger" >
+        <input type="checkbox" style="opacity: 0;">
+    <span id="animate" class="line1"></span>
+    <span id="animate" class="line2"></span>
+    <span id="animate" class="line3"></span>
+ </a>
+
+<ul class="nav" id="links" style="list-style: none; height: 20rem; height: fit-content; list-style-type: none; ">
+    <li>      <a href="about.html" class="abt"> <h1 >About</h1> </a>   </li>
+    <div class="nav-lines"></div>
+    <li>                    <a href="services.html" class="serv"> <h1 >Services</h1> </a>     </li>
+    <div class="nav-lines"></div>
+    <li>       <a href="contact.HTML" class="cont"> <h1 >Contact</h1> </a>   </li>        
+    <div class="nav-lines"></div>  
+    <li id="icons" >   <a class="email-link" id="email" href="mailto:angelicpunk@gmail.com?subject=Website Development"> <img src="media/Mail.svg" alt="" class="email"></a> </li>   
+    <li id="icons"> <a href="https://github.com/AngelicPunk" class="github" rel="noreferrer noopener" target="_blank">   <img src="media\Github icon.svg" alt="" class="github-icon"> </a> </li>
+    <li id="icons"> <a href="https://www.linkedin.com/in/angelicpunk/" class="linked-in" rel="noreferrer noopener" target="_blank">    <img src="media\Linkedin icon.svg" alt="" class="linked-in-icon">    </a> </li>
+       <!-- <a href="#missionStatement" class="nav-link nav-link-2">Mission Statement</a> -->
+</ul>
 <body>
-    <section class="ways-to-contact">
-      <div class="email">
+  <h1 class="title"> Contact </h1>
+  <div class="line"></div>
 
-      </div>
-      <div class="github">
+   <section id="grid">
+  <div class="emailstuff"> <a class="email-call1" id="email" href="mailto:angelicpunk@gmail.com?subject=Website Development"> <img src="media/Mail.svg" alt="" id="email"></a>
+  <h1 class="email-call2"> Email Me! </h1>
+  </div>
+  <div class="instastuff">
+   <a href="https://www.instagram.com/genesistechnologies.dev/" >  <img src="media/Instagram.svg" class="insta">  </a>
+   <h1 class="instagram"> Follow me on Instagram! </h1>
+  </div>
+  <div class="fbstuff">
+   <a href="https://m.facebook.com/genesistechnologies.dev/" class="facebook"> <img src="media/Facebook.svg" alt="" id="fb">   </a>
+   <h1 class="fb">  Check out my Facebook Page  </h1>
+  </div>
+  <div class="phonestuff">
+   <a href="tel:2106924591" class="phone">  <img src="media/Phone.svg" id="phone">   </a>
+  <h1 class="call"> Text Me!  </h1>
+  </div>
+  <script>
+    const hamburger = document.querySelector('.burger');
+const links = document.querySelector('.nav');
+const animate = document.getElementById("animate");
+const bar1 = document.getElementsByClassName('.bar1');
+const bar2 = document.getElementsByClassName('.bar2');
+const bar3 = document.getElementsByClassName('.bar3');
+const bar = [bar1, bar2, bar3];
 
-      </div>
-      div.
-    </section>
-    <script src="contact.js"></script>
-   
-</body>
-<script src="contact.js"></script>
-<script src="https://unpkg.com/react@17/umd/react.production.min.js"></script>
-<script src="https://unpkg.com/react-dom@17/umd/react-dom.production.min.js"></script>
+
+hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle("active");
+    links.classList.toggle("active");
+});
+
+document.querySelectorAll(".nav").forEach(n => n.addEventListener("click", () => {
+     hamburger.classList.remove("active");
+     links.classList.remove("active");
+}));
+ </script>
+</section>
+
+
+  </body>
+  
 </html>

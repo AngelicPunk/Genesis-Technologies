@@ -457,7 +457,7 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        width: 100%;
+        width: 99%;
         top: -2rem;
         left: -1rem;
         z-index: 5;
