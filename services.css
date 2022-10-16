@@ -343,46 +343,46 @@ section {
         justify-content: center;
     }
 
+    @keyframes transform{
+        0% {transform: scale(50%);}
+        100% {transform: scale(100%);}
+    }
+
     .abt  {
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: #05FF00;
         }
     
-     .abt:visited{
-        padding: 0 2rem;
-        color: #05FF00;
-        text-decoration: none;
-     }   
     
      .abt:hover {
         padding: 0 2rem;
-        color: #D900FF;
-        text-decoration-line: underline;
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
      }
+    
+     @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
     .serv {
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: none;
     
         }
-    .serv:visited {
-        padding: 0 2rem;
-        color: #05FF00;
-        text-decoration: none;
-    
-    }
     .serv:hover {
         padding: 0 2rem;
-        color: #D900FF;
-        text-decoration-line: underline;
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
     
     }
     
-    #icons {
-        display: flex;
-        margin-left: 2rem;
-    }
+    
     
     .cont {
         padding: 0 3rem;
@@ -390,57 +390,65 @@ section {
         text-decoration: none;
         }
     
-    .cont:visited {
-        padding: 0 3rem;
-        color: #05FF00;
-        text-decoration-line: underline;
-    
-    }
-    
     .cont:hover {
         padding: 0 3rem;
-        color: #D900FF;
-        text-decoration-line: underline;
-    
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
     }
-    .email {
+    
+    #icons {
         display: flex;
-        position: relative;
-        transform: scale(2);
-        height: 2rem;
-        top: 2.5rem;
-        margin: 0 1rem;
+        margin-left: 2rem;
+        flex-direction: row;
     }
     
+    .email {
+        position: relative;
+        height: 3.4rem;
+        top: 1rem;
+    }
+    
+    @keyframes transform{
+        0% {transform: scale(50%);}
+        100% {transform: scale(100%);}
+    }
     .email:hover {
         display: flex;
         position: relative;
-        transform: scale(2.2);
-        height: 2rem;
-      top: 2.5rem;
+        height: 3.4rem;
+        animation: transform .5s;
+        top: 1rem;
+    
     }
     
     .github{ 
+        top: 1rem;
+        right: 1rem;
         position: relative;
         display: flex;
+        height: 3.5rem;
     }
     
     .github:hover{ 
+        top: 1rem;
         position: relative;
-        transform: scale(1.1);
-    
+        animation: transform .5s;
     }
     
     .linked-in {
+        top: 1rem;
         position: relative;
         display: flex;
-        margin-right: 2rem;
+        right: 3.2rem;
+        height: 3.5rem;
     }
     
     .linked-in:hover {
         position: relative;
-        transform: scale(1.1);
-    
+        animation: transform .5s;
+        top: 1rem;
     }
     
     .nav {
@@ -449,25 +457,25 @@ section {
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        left: -.6rem;
-        width: 110%;
+        width: 100%;
         top: -2rem;
+        left: -1rem;
         z-index: 5;
-        background: linear-gradient(360deg, rgba(0, 0, 0, 0.2257) -12.32%, rgba(51, 0, 255, 0.37) 100%);
         background-blend-mode: screen;
-        mix-blend-mode: normal;
-        box-shadow: -7px 12px 81px -17px #5200FF;
-        backdrop-filter: blur(50px);
+        background-color: rgba(36, 8, 105, 0.5);
+        /* box-shadow: -7px 12px 81px -17px #5200FF; */
         font-weight: 400;
+        font-size: .6rem;
+        margin: 1.5rem 0;
     }
     
-    .nav-lines{
+    /* .nav-lines{
         border: 1px solid rgb(5, 255, 0);
         height: 3rem;
         top: 2.5rem;
         display: flex;
         position: relative;
-    }
+    } */
 
 
     .webdev {
