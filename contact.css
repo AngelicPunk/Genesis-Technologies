@@ -152,7 +152,7 @@
 #grid {
     position: relative;
     display: grid;
-    grid-template-columns: auto 2fr;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "email-call1 emailcall2"
                         "insta instagram"
@@ -160,11 +160,12 @@
                         "phone call";
                         
     max-height: 20rem;
-    width: 25rem;
     font-size: 1rem;
     text-align: center;
+    left: -1.5rem;
     gap: 2rem;
-    margin: 1rem;
+    margin: auto;
+    transform: scale(.7);
 }
 
 #email {
