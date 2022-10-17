@@ -1,5 +1,6 @@
 @media only screen and (max-width: 1000px) { 
     * {
+        text-decoration: none;
         font-weight: 300;
     }
 
@@ -18,6 +19,7 @@
     .nav {
         display: none;
         height: fit-content;    
+        text-decoration: none;
         background-color: #0c0427;
     }
 
@@ -26,6 +28,7 @@
         flex-direction: column;
         z-index: 700;
         justify-content: center;
+        text-decoration: none;
         text-align: center;
         transition: 3s ease-in-out;
         position: relative;
@@ -43,6 +46,7 @@
         width: 89%;
         align-items: center;
         opacity: 100%;
+        text-decoration: none;
       } 
 
 .email {
@@ -130,9 +134,10 @@
 
 .title {
     font-size: 3rem;
-    filter: drop-shadow(13px 4px 22px #7cf7ff); 
+    filter: drop-shadow(13px 4px 22px aqua); 
     width: 12rem;
     text-align: center;
+    color: aqua;
     z-index: 5;
     font-weight: 400;
 }
@@ -165,7 +170,7 @@
     left: -1.5rem;
     gap: 2rem;
     margin: auto;
-    transform: scale(.7);
+    transform: scale(.8);
 }
 
 #email {
@@ -177,6 +182,7 @@
     background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
     box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
     padding: 1rem;
+    color: aqua;
     border-radius: 107px;
     height: fit-content;
 }
@@ -184,6 +190,7 @@
     background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
     box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
     border-radius: 107px;
+    color: aqua;
     height: fit-content;
     padding: 0 0 3rem 0;
 }
@@ -213,6 +220,7 @@
     padding: 0 0 3rem 0;
     height: fit-content;
     border-radius: 107px;
+    color: aqua;
 }
 
 #phone {
@@ -220,6 +228,8 @@
 }
 
 .phonestuff {
+    color: aqua;
+
     background: radial-gradient(72.1% 151.19% at 51.77% 49.23%, rgba(173, 0, 255, 0.54) 0%, rgba(0, 0, 0, 0.13) 100%);
     box-shadow: 0px 1px 17px -1px rgba(82, 0, 255, 0.68);
     height: auto;
@@ -231,7 +241,24 @@
 
 
 
-
+.refs {
+    position: relative;
+    display: flex;
+    color: #BA91F2;
+    background: rgb(0,13,79);
+    background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
+    filter: drop-shadow(0 0 0.75rem magenta);
+    border-radius: 1rem;
+    width: 90%;
+    left: 0;
+    height: 5rem;
+    text-align: center;
+    align-items: center;
+    font-weight: 300;
+    top: 20rem;
+    margin: auto;
+    padding: 0 2rem;
+}
 
 
 
