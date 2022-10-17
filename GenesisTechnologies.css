@@ -415,14 +415,16 @@ iframe {
     background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
     filter: drop-shadow(0 0 0.75rem magenta);
     z-index: 2;
-    position: absolute;
+    position: relative;
     display: block;
-    bottom: -273rem;
+    top: 600rem;
     width: 100%;
 }
 
 }
 @media only screen and (max-width: 800px) {
+    
+
     html {
         font-family: 'Orbitron', sans-serif;
         background-color: #160A40;
@@ -574,7 +576,6 @@ a > h1 {
         position: relative;
         top: 3rem;
         justify-content: center;
-        transform: scale(2);
     }
 
     .mission {
@@ -587,8 +588,8 @@ a > h1 {
         flex-flow: column;
         top: 34rem;
         color: #BA91F2;
+        margin: auto;
         width: 52%;
-        margin: 3rem;
         padding: 3rem;
         z-index: 1;
         text-align: center;
@@ -691,7 +692,7 @@ a > h1 {
 
     .lottie3 {
         display: flex;
-        top: 51rem;
+        top: 60rem;
         position: relative;
         justify-content: flex-end;
         margin: 0rem;
@@ -727,8 +728,9 @@ a > h1 {
             color: rgb(197, 153, 238);
             position: relative;
             top: 135rem;
-            font-size: 2.4rem;
+            font-size: 1.5rem;
             justify-content: center;
+            font-weight: 300;
             filter: drop-shadow(0 0 0.75rem magenta);
             background: rgb(0,13,79);
             background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
@@ -797,8 +799,7 @@ a > h1 {
                         }
 
     .refs {
-        position: absolute;
-        bottom: -269rem;
+        position: relative;
         display: flex;
         color: #BA91F2;
         background: rgb(0,13,79);
@@ -808,6 +809,7 @@ a > h1 {
         width: 100%;
         left: 0;
         text-align: center;
-        font-weight: lighter;
+        font-weight: 300;
+        top: 200rem;
     }
 }
