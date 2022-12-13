@@ -10,7 +10,7 @@
         font-weight: 300;
         overflow-x: hidden;
     }
-
+  
     section {
         color: #7cf7ff;
         font-family: 'orbitron', sans-serif;
@@ -279,12 +279,19 @@
         font-weight: 300;
     }
 
+    .logo {
+        top: 1rem;
+        width: 5rem;
+    }
+
     @keyframes transform{
         0% {transform: scale(50%);}
         100% {transform: scale(100%);}
     }
 
     .abt  {
+        top: 4rem;
+        font-size: 1rem;
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: #05FF00;
@@ -292,6 +299,7 @@
     
     
      .abt:hover {
+        font-size: 1rem;
         padding: 0 2rem;
         color: #ff00ff;
         text-decoration: underline;
@@ -304,12 +312,14 @@
         100% { opacity: 1; }
       }
     .serv {
+        font-size: 1rem;
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: none;
     
         }
     .serv:hover {
+        font-size: 1rem;
         padding: 0 2rem;
         color: #ff00ff;
         text-decoration: underline;
@@ -321,12 +331,14 @@
     
     
     .cont {
+        font-size: 1rem;
         padding: 0 3rem;
         color: #05FF00;
         text-decoration: none;
         }
     
     .cont:hover {
+        font-size: 1rem;
         padding: 0 3rem;
         color: #ff00ff;
         text-decoration: underline;
@@ -336,31 +348,31 @@
     
     #icons {
         display: flex;
-        margin-left: 2rem;
+        margin: 1rem 0 0 2rem;
         flex-direction: row;
     }
     
     .email {
         position: relative;
-        height: 3.4rem;
-        top: 1rem;
+        height: 4rem;
+        top: 1.3rem;
     }
     
     @keyframes transform{
-        0% {transform: scale(50%);}
-        100% {transform: scale(100%);}
+        0% {transform: scale(100%);}
+        100% {transform: scale(140%);}
     }
     .email:hover {
         display: flex;
         position: relative;
-        height: 3.4rem;
+        height: 4rem;
         animation: transform .5s;
-        top: 1rem;
+        top: 1.3rem;
     
     }
     
     .github{ 
-        top: 1rem;
+        top: 1.5rem;
         right: 1rem;
         position: relative;
         display: flex;
@@ -368,13 +380,13 @@
     }
     
     .github:hover{ 
-        top: 1rem;
+        top: 1.5rem;
         position: relative;
         animation: transform .5s;
     }
     
     .linked-in {
-        top: 1rem;
+        top: 1.5rem;
         position: relative;
         display: flex;
         right: 3.2rem;
@@ -384,10 +396,11 @@
     .linked-in:hover {
         position: relative;
         animation: transform .5s;
-        top: 1rem;
+        top: 1.5rem;
     }
     
     .nav {
+        margin: auto;
         font-family: 'Orbitron', sans-serif;
         position: fixed;
         display: flex;
@@ -399,19 +412,10 @@
         z-index: 5;
         background-blend-mode: screen;
         background-color: rgba(36, 8, 105, 0.5);
-        /* box-shadow: -7px 12px 81px -17px #5200FF; */
         font-weight: 400;
         font-size: .6rem;
-        margin: 1.5rem 0;
     }
     
-    /* .nav-lines{
-        border: 1px solid rgb(5, 255, 0);
-        height: 3rem;
-        top: 2.5rem;
-        display: flex;
-        position: relative;
-    } */
     
 #grid {
     display: grid;
@@ -436,11 +440,11 @@
         z-index: 5;
         font-weight: 400;
         color: aqua;
-        margin: 2rem 2rem .2rem 2rem;
+        margin: 6rem 2rem .2rem 5rem;
     }
     
     .line {
-        left: 2rem;
+        left: 5rem;
             display: flex;
             position: relative;
         width: 13rem;

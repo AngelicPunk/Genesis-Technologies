@@ -274,6 +274,11 @@ footer>h6 {
         overflow-x: hidden;
     }
 
+    .logo {
+        display: flex;
+        width: 5rem;
+    }
+
     h6 {
         font-weight: 300;
         font-size: 1.2rem;
@@ -373,6 +378,7 @@ section {
     }
 
     .abt  {
+        font-size: .8rem;
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: #05FF00;
@@ -380,6 +386,7 @@ section {
     
     
      .abt:hover {
+        font-size: .8rem;
         padding: 0 2rem;
         color: #ff00ff;
         text-decoration: underline;
@@ -392,12 +399,14 @@ section {
         100% { opacity: 1; }
       }
     .serv {
+        font-size: .8rem;
         padding: 0 2rem;
         color: #05FF00;
         text-decoration: none;
     
         }
     .serv:hover {
+        font-size: .8rem;
         padding: 0 2rem;
         color: #ff00ff;
         text-decoration: underline;
@@ -409,12 +418,14 @@ section {
     
     
     .cont {
+        font-size: .8rem;
         padding: 0 3rem;
         color: #05FF00;
         text-decoration: none;
         }
     
     .cont:hover {
+        font-size: .8rem;
         padding: 0 3rem;
         color: #ff00ff;
         text-decoration: underline;
