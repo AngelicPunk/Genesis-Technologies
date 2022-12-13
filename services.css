@@ -8,6 +8,7 @@ html {
     background: #160A40;
     color: #00FFFF;
     font-weight: 400;
+    text-underline-offset: 500rem;
     overflow-x: hidden;
 }
 
@@ -17,6 +18,10 @@ section {
     position: relative;
     width: 90%;
 }
+.logo {
+    height: 10rem;
+    position: relative;
+}
 .nav {
     display: none;
     height: fit-content;    
@@ -24,25 +29,34 @@ section {
 }
 
 .nav.active{
-    display: flex;
-    flex-direction: column;
+    display: grid;
     z-index: 700;
     justify-content: center;
     text-align: center;
-    transition: 3s ease-in-out;
     position: relative;
+    text-decoration: none;
+    animation: fadeIn 1s ease-in;
+    padding: 2rem;
+}
+
+@keyframes fadeIn {
+from{  opacity: 0;}
+
+to{opacity: 100%}
+}
+
   }
 
 
   #links {
     z-index: 900;
-    height: 30rem;
-    padding: 2rem; 
-    top: -1rem;
-    left: -1rem;
-    border-radius: 5rem; 
+    top: 0;
+    border-radius: 3rem; 
     position: absolute;
-    width: 89%;
+    right: .5rem;
+    text-decoration: none;
+    text-decoration-style: none;
+    width: 70%;
     align-items: center;
     opacity: 100%;
   } 
@@ -131,7 +145,7 @@ height: 4rem;
   }
 
 
-.servs {
+.servis {
     font-family: 'Orbitron', sans-serif;
     position: relative;
     color: #7cf7ff;
@@ -260,7 +274,7 @@ footer>h6 {
     padding: 0 2rem;
 }
 
-}
+
 
 @media only screen and (min-width: 1000px) {
     * {
@@ -284,7 +298,7 @@ footer>h6 {
         font-size: 1.2rem;
     }
     
-    .servis {
+    .servi {
         font-family: 'Orbitron', sans-serif;
         position: absolute;
         color: #7cf7ff;
@@ -559,4 +573,3 @@ section {
     }
     }
 
-}
