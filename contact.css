@@ -9,29 +9,137 @@
         font-family: 'Orbitron', sans-serif;
         font-weight: 300;
         overflow-x: hidden;
+        display: flex;
+        width: 100%;
     }
   .logo {
     position: relative;
-    height: 10rem;
+    height: 5rem;
   }
     section {
         color: #7cf7ff;
         font-family: 'orbitron', sans-serif;
+        width: 100%;
+        display: flex;
     }
-
+    .abt  {
+        padding: 0 2rem;
+        color: #05FF00;
+        text-decoration: #05FF00;
+        }
+    
+    
+     .abt:hover {
+        padding: 0 2rem;
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
+     }
+    
+     @keyframes fadeIn {
+        0% { opacity: 0; }
+        100% { opacity: 1; }
+      }
+    .serv {
+        padding: 0 2rem;
+        color: #05FF00;
+        text-decoration: none;
+    
+        }
+    .serv:hover {
+        padding: 0 2rem;
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
+    
+    }
+    
+    
+    
+    .cont {
+        padding: 0 3rem;
+        color: #05FF00;
+        text-decoration: none;
+        }
+    
+    .cont:hover {
+        padding: 0 3rem;
+        color: #ff00ff;
+        text-decoration: underline;
+        text-underline-offset: .5rem;
+        animation: fadeIn .5s ease-in;
+    }
+    
+    #icons {
+        display: flex;
+        margin-left: 2rem;
+        flex-direction: row;
+    }
+    
+    .email {
+        position: relative;
+        height: 3.4rem;
+        top: 1.5rem;
+    }
+    
+    @keyframes transform{
+        0% {transform: scale(50%);}
+        100% {transform: scale(100%);}
+    }
+    .email:hover {
+        display: flex;
+        position: relative;
+        height: 3.4rem;
+        animation: transform .5s;
+        top: 1.5rem;
+    
+    }
+    
+    .github{ 
+        top: 1.55rem;
+        right: 1rem;
+        position: relative;
+        display: flex;
+        height: 3.5rem;
+    }
+    
+    .github:hover{ 
+        top: 1.5rem;
+        position: relative;
+        animation: transform .5s;
+    }
+    
+    .linked-in {
+        top: 1.5rem;
+        position: relative;
+        display: flex;
+        right: 3.2rem;
+        height: 3.5rem;
+    }
+    
+    .linked-in:hover {
+        position: relative;
+        animation: transform .5s;
+        top: 1.5rem;
+    }
+    
     .nav {
         display: none;
-        text-decoration: none;
+        height: fit-content;
         background-color: #0c0427;
-        opacity: 0;
     }
 
     .nav.active{
-        z-index: 700;
-        opacity: 100%;
-        margin: auto;    
-        top: .5rem;    
+        display: grid;
+        z-index: 900;
+        justify-content: center;
         text-align: center;
+        text-decoration: none;
+
+        transition: 3s ease-in-out;
+        position: relative;
         animation: fadeIn 1s ease-in;
     }
 
@@ -46,21 +154,16 @@ to{opacity: 100%}
 
 
       #links {
-        z-index: 900;
-        padding: 2rem; 
+        z-index: 800;
+        height: 30rem;
+        padding: 5rem; 
+        right: -4rem;
         border-radius: 2rem; 
-        position: absolute;
-        width: 70%;
-        right: .5rem;
-        text-decoration: none;       
-        display: grid;
+        color: #ff00ff;
+        width: 60%;
       } 
 
-.email {
-    grid-area: email;
-    transform: scale(-1rem);
-    height: 4rem;
-}
+
 
     .burger{ 
         position: absolute;
@@ -90,7 +193,7 @@ to{opacity: 100%}
         background-color: magenta;
         border-radius: 2rem;
         transition: all 0.3s ease-in-out;
-        margin: .1rem 0 ;
+        margin: .1rem 0;
 
     }    
     .line3 {        
@@ -138,16 +241,6 @@ to{opacity: 100%}
 
       }
 
-.title {
-    font-size: 3rem;
-    filter: drop-shadow(13px 4px 22px aqua); 
-    width: 12rem;
-    text-align: center;
-    color: aqua;
-    z-index: 5;
-    font-weight: 400;
-}
-
 .line {
   top: -2rem;
         display: flex;
@@ -179,8 +272,7 @@ to{opacity: 100%}
 }
 
 #email {
-     transform: scale(.7);
-     margin-top: 1rem;
+     transform: scale(.9);
 }
 
 .emailstuff {
@@ -247,9 +339,9 @@ to{opacity: 100%}
 
 
 .refs {
-    position: relative;
-    display: flex;
+    position: absolute;
     color: #BA91F2;
+    display: none;
     background: rgb(0,13,79);
     background: radial-gradient(circle, rgba(0,13,79,1) 0%, rgba(0,16,97,1) 0%, rgba(22,10,64,1) 56%);
     filter: drop-shadow(0 0 0.75rem magenta);
@@ -465,17 +557,17 @@ to{opacity: 100%}
         z-index: 5;
         font-weight: 400;
         color: aqua;
-        margin: 6rem 2rem .2rem 5rem;
+        margin: 10rem 2rem .2rem 5rem;
     }
     
     .line {
-        left: 5rem;
-            display: flex;
+        display: none;
+        left: 4.5rem;
             position: relative;
-        width: 13rem;
+        width: 14rem;
         border: .5px solid #7cf7ff;
         border-radius: 2rem;
-        margin: 0 0 3rem 0;
+        margin: 2rem 0 3rem 0;
         filter: drop-shadow(13px 4px 22px #7cf7ff);    
     }
 
