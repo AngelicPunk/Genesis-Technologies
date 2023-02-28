@@ -156,11 +156,11 @@ to{opacity: 100%}
       #links {
         z-index: 800;
         height: 30rem;
-        padding: 5rem; 
+        padding: 1rem; 
         right: -4rem;
         border-radius: 2rem; 
         color: #ff00ff;
-        width: 60%;
+        width: 100%;
       } 
 
 
@@ -384,6 +384,10 @@ to{opacity: 100%}
 
     }
 
+    .burger {
+        display: none;
+    }
+
     @keyframes transform{
         0% {transform: scale(50%);}
         100% {transform: scale(100%);}
@@ -522,7 +526,7 @@ to{opacity: 100%}
         display: flex;
         justify-content: space-between;
         align-items: stretch;
-        width: 100%;
+        width: 150%;
         height: 4rem;
         top: -2rem;
         left: -1rem;
